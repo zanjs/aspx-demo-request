@@ -5,7 +5,7 @@
     <div class="jumbotron">
          <% string newAddress = Request.QueryString["new"];  %>
 
-        <% if (newAddress != null || (DateTime.Now > new DateTime(2017, 7, 7, 0, 0, 0)) ) { %>
+        <% if (newAddress != null || (DateTime.Now > new DateTime(2017, 7, 6, 0, 0, 0) &&  DateTime.Now < new DateTime(2017, 10, 1, 0, 0, 0)) ) { %>
          <h1>被发现了 <%=newAddress %></h1>
         <% } else { %>
             
